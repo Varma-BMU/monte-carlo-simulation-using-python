@@ -28,12 +28,7 @@ class Queue:
 
 class Customers_to_be_Served:
     def __init__(self, time):
-        '''
-        :param time: Customer arrival time
-        >>> arrival=Customers_to_be_Served(5)
-        >>> arrival.waitTime(10)
-        5
-        '''
+        
         self.Customer_arrival_time = time
         self.item = random.randrange(1,11)  # generates a random number between 1 and 10 (customer can order between 1 to 10 items)
 
@@ -57,7 +52,7 @@ class Customers_to_be_Served:
 class Cashier_serving_Customer:
     def __init__(self, itemspm):
         '''
-        :param itemspm:Items entered by the cashier per minute
+        :param items/m:Items entered by the cashier per minute
         '''
 
         self.rate = itemspm  # serving rate(items entered by the cashier per min)
